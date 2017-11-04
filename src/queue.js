@@ -38,4 +38,5 @@ class PriorityQueue {
 		return false;
 	}
 }
+}
 module.exports = PriorityQueue;
