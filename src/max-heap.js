@@ -24,7 +24,7 @@ class MaxHeap {
 	}
 
 	size() {
-		
+		return this.length;
 	}
 
 	isEmpty() {
