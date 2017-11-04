@@ -40,7 +40,7 @@ class Node {
 		if(this.parent!==null){
 			this.parent.removeChild(this);
 		}
-
+		return this;
 	}
 
 	swapWithParent() {
