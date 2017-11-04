@@ -32,8 +32,6 @@ class Node {
 		else {
 			throw new Error();
 		}
-
-		}
 	}
 
 	remove() {
