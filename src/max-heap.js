@@ -14,7 +14,9 @@ class MaxHeap {
 	}
 
 	pop() {
-		
+		if(!this.isEmpty){
+
+		}
 	}
 
 	detachRoot() {
@@ -46,7 +48,7 @@ class MaxHeap {
 
 	insertNode(node) {
 		if(this.root===null){
-			
+
 		}
 	}
 
