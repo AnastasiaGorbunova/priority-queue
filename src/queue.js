@@ -3,7 +3,7 @@ const MaxHeap = require('./max-heap.js');
 
 class PriorityQueue {
 	constructor(maxSize) {
-		if(maxSize!==undefined){
+		if(maxSize===null){
 			this.maxSize=30;
 		}
 		else {
