@@ -5,6 +5,7 @@ class Node {
 		this.parent = null;
 		this.left = null;
 		this.right = null;
+		this.grandparent=null;
 	}
 
 	appendChild(node) {
@@ -42,21 +43,17 @@ class Node {
 	}
 
 	swapWithParent() {
-		if(this.parent===null){
-			this.parent.removeChild(this);
-		}
-		else {
-			var grandparent=this.parent.parent;
-			if(grandparent!==null){
-				if(grandparent.left==grandparent){
-					grandparent.left=this;
-				}
-				else{
-					grandparent.right=this;
+		if(this.parent!==null){
+			if(this.parent.parent!==null){
+				if(this.parent===this.parent.parent.left){
+					this.parent.parent.left=this;
+					}
+					else{
+						this.parent.parent.left=this;
+					}
 				}
 			}
 		}
-		
 	}
 }
 
