@@ -13,7 +13,7 @@ class PriorityQueue {
 			throw new Error();
 		}	
 		else {
-			this.heap.push(data, priority);
+			return this.heap.push(data, priority);
 		}
 	}
 
@@ -22,7 +22,7 @@ class PriorityQueue {
 			throw new Error();
 		}
 		else {
-			this.heap.pop();
+			return this.heap.pop();
 		}
 	}
 
