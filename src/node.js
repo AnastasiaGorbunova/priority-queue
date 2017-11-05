@@ -46,7 +46,15 @@ class Node {
 			this.parent.removeChild(this);
 		}
 		else {
-
+			var grandparent=this.parent.parent;
+			if(grandparent!==null){
+				if(grandparent.left==grandparent){
+					grandparent.left=this;
+				}
+				else{
+					grandparent.right=this
+				}
+			}
 		}
 		
 	}
