@@ -52,7 +52,7 @@ class Node {
 					grandparent.left=this;
 				}
 				else{
-					grandparent.right=this
+					grandparent.right=this;
 				}
 			}
 		}
