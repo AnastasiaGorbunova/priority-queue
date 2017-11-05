@@ -51,12 +51,6 @@ class Node {
 						this.parent.parent.right=this;
 					}
 				}
-				if(this.parent.parent===this.parent.left){
-					this.parent.left=this;
-				}
-				else {
-					this.parent.right=this;
-				} 
 			}
 		}
 	}
