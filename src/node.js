@@ -5,7 +5,6 @@ class Node {
 		this.parent = null;
 		this.left = null;
 		this.right = null;
-		this.grandparent=null;
 	}
 
 	appendChild(node) {
@@ -49,8 +48,14 @@ class Node {
 					this.parent.parent.left=this;
 					}
 					else{
-						this.parent.parent.left=this;
+						this.parent.parent.right=this;
 					}
+				}
+				if(this.parent===this.parent.left){
+					this.parent.left=this;
+				}
+				else {
+					this.parent.right=this;
 				}
 			}
 		}
