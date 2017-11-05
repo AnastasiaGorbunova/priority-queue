@@ -18,11 +18,11 @@ class PriorityQueue {
 	}
 
 	shift() {
-		if(this.heap.isEmpty()){
+		if(this.isEmpty()){
 			throw new Error();
 		}
 		else {
-			return this.heap.pop();
+			this.heap.pop();
 		}
 	}
 
